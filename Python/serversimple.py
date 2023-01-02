@@ -5,8 +5,11 @@ from flask import Flask, request, jsonify
 # Directory where the server's assets are stored
 ASSETS_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Create a Flask app
-app = Flask(__name__)
+# Prompt the user for the name of the Flask app
+app_name = input("Enter the name of the Flask app: ")
+
+# Create a Flask app with the specified name
+app = Flask(app_name)
 
 # Prompt the user for the server address and port
 server_address = input("Enter the server address: ")
