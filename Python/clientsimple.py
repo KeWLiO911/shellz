@@ -6,8 +6,8 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Replace these with the actual server address and port
-server_address = '<YOUR_SERVER_IP_HERE>'
-server_port = '<YOUR_SERVER_PORT_HERE>'
+server_address = '<REMOTE_SERVER_IP_HERE>'
+server_port = '<REMOTE_SERVER_PORT_HERE>'
 
 # Construct the full URL for the server
 url = f'http://{server_address}:{server_port}/'
